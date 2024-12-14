@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета відвідувача ресторану</title>
+</head>
+<body style="background-color: #f9c74f; font-family: Arial, sans-serif;">
+    <h1>Анкета відвідувача ресторану</h1>
+    <form>
+        <fieldset>
+            <legend>Контактна інформація</legend>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="phone">Телефон:</label>
+            <input type="text" id="phone" name="phone" placeholder="у форматі 000-000-00-00"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="date">Дата відвідування:</label>
+            <input type="date" id="date" name="date"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Персональна інформація</legend>
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age"><br><br>
+            <label for="cuisine">Улюблена кухня:</label>
+            <input type="text" id="cuisine" name="cuisine"><br><br>
+            <label for="dishes">Які ще страви ви б хотіли бачити в меню?</label><br>
+            <textarea id="dishes" name="dishes" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Оцінка нашого закладу</legend>
+            <label>Чому ви обрали наш заклад?</label><br>
+            <input type="checkbox" id="reason1" name="reason" value="work">
+            <label for="reason1">Поряд з місцем роботи</label><br>
+            <input type="checkbox" id="reason2" name="reason" value="advertisement">
+            <label for="reason2">Побачив рекламу</label><br>
+            <input type="checkbox" id="reason3" name="reason" value="friends">
+            <label for="reason3">Порадила друзі</label><br>
+            <input type="checkbox" id="reason4" name="reason" value="quality">
+            <label for="reason4">Найкраще співвідношення ціни і якості</label><br><br>
+            <label>Чи будете ви рекомендувати наш заклад своїм знайомим?</label><br>
+            <input type="radio" id="recommend_yes" name="recommend" value="yes">
+            <label for="recommend_yes">Так</label><br>
+            <input type="radio" id="recommend_no" name="recommend" value="no">
+            <label for="recommend_no">Ні</label><br><br>
+        </fieldset>
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
